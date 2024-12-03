@@ -1,12 +1,13 @@
 'use strict';
 
-/* Do following tasks inside function `fn` (see stub: `7-objects.js`)
-- Define constant object with single field `name`.
-- Define variable object with single field `name`.
-- Try to change field `name`.
-- Try to assign other object to both identifiers.
-- Explain script behaviour. */
-
-const fn = null;
+const fn = () => {
+  const obj = { name: 1 };
+  let obj2 = { name: 5 };
+  obj.name++;
+  obj2.name--;
+  // це була непрацююча дія, тому його треба було видалити
+  // obj = { abc: 9 };
+  obj2 = { abc: 0 };
+};
 
 module.exports = { fn };
